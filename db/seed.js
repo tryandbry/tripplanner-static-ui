@@ -2,11 +2,12 @@
 // The data can then be loaded with the node seed.js
 
 var Promise = require('bluebird');
-var db = require('./models');
-var Place = require('./models/place');
-var Hotel = require('./models/hotel');
-var Restaurant = require('./models/restaurant');
-var Activity = require('./models/activity');
+var {db,Place,Hotel,Activity,Restaurant} = require('./index');
+//var db = require('./models');
+//var Place = require('./models/place');
+//var Hotel = require('./models/hotel');
+//var Restaurant = require('./models/restaurant');
+//var Activity = require('./models/activity');
 
 var data = {
   hotels: [
