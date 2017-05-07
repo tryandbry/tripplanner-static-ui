@@ -25,6 +25,7 @@ select {
 
 #pagination {
   background-color: #eeeeee;
+  text-align: center;
 }
 
 #map-canvas {

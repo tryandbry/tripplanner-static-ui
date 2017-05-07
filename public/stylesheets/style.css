@@ -19,7 +19,8 @@ select {
   height: calc(100vh - 52px); }
 
 #pagination {
-  background-color: #eeeeee; }
+  background-color: #eeeeee;
+  text-align: center; }
 
 #map-canvas {
   height: 100%; }

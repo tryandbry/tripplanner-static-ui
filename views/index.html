@@ -42,114 +42,120 @@
   <div id="map-canvas"></div>
 {% endblock %}
 
-{% block mheader %}
-<h2>Day 2</h2>
-{% endblock %}
-
 {% block fields %}
 <div class="row">
-  <div class="col-lg-12 col-md-12">
-    <h3>Hotels</h3>
+  <h3>Hotels</h3>
+  <div class="row">
+    <div class="col-lg-10 col-md-10">
+      <select>
+        {% for hotel in hotels %}
+          <option value="{{hotel}}">{{hotel}}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="col-lg-2 col-md-2">
+      <button class="btn btn-default">X</button>
+    </div>
   </div>
-  <div class="col-lg-10 col-md-10">
-    <select>
-      {% for hotel in hotels %}
-        <option value="{{hotel}}">{{hotel}}</option>
-      {% endfor %}
-    </select>
+  <h3>Activity</h3>
+  <div class="row">
+    <div class="col-lg-10 col-md-10">
+      <select>
+        {% for activity in activities %}
+          <option value="{{activity}}">{{activity}}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="col-lg-2 col-md-2">
+      <button class="btn btn-default">X</button>
+    </div>
   </div>
-  <div class="col-lg-2 col-md-2">
-    <button class="btn btn-default">X</button>
+  <h3>Restaurant</h3>
+  <div class="row">
+    <div class="col-lg-10 col-md-10">
+      <select>
+        {% for restaurant in restaurants %}
+          <option value="{{restaurant}}">{{restaurant}}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="col-lg-2 col-md-2">
+      <button class="btn btn-default">X</button>
+    </div>
   </div>
-  <div class="col-lg-12 col-md-12">
-    <h3>Activity</h3>
-  </div>
-  <div class="col-lg-10 col-md-10">
-    <select>
-      {% for activity in activities %}
-        <option value="{{activity}}">{{activity}}</option>
-      {% endfor %}
-    </select>
-  </div>
-  <div class="col-lg-2 col-md-2">
-    <button class="btn btn-default">X</button>
-  </div>
-  <div class="col-lg-12 col-md-12">
-    <h3>Restaurant</h3>
-  </div>
-  <div class="col-lg-10 col-md-10">
-    <select>
-      {% for restaurant in restaurants %}
-        <option value="{{restaurant}}">{{restaurant}}</option>
-      {% endfor %}
-    </select>
-  </div>
-  <div class="col-lg-2 col-md-2">
-    <button class="btn btn-default">X</button>
-  </div>
+</div>
+{% endblock %}
+
+{% block mheader %}
+<div class="row">
+<h2>Day 2</h2>
 </div>
 {% endblock %}
 
 {% block fieldstwo %}
-<div id="pagination" class="col-lg-12 col-md-12">
-  <nav aria-label="Page navigation">
-    <ul class="pagination">
-      <li>
-        <a href="#" aria-label="Previous">
-          <span aria-hidden="true">&laquo;</span>
-        </a>
-      </li>
-      <li><a href="#">1</a></li>
-      <li><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#">4</a></li>
-      <li><a href="#">5</a></li>
-      <li>
-        <a href="#" aria-label="Next">
-          <span aria-hidden="true">&raquo;</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
+<div class="row">
+  <div id="pagination" class="col-lg-12 col-md-12">
+    <nav aria-label="Page navigation">
+      <ul class="pagination">
+        <li>
+          <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li>
+          <a href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </div>
-<div class="col-lg-12 col-md-12">
+<div class="row">
   <h3>Hotels</h3>
-</div>
-<div class="col-lg-10 col-md-10">
-  <select>
-    {% for hotel in hotels %}
-      <option value="{{hotel}}">{{hotel}}</option>
-    {% endfor %}
-  </select>
-</div>
-<div class="col-lg-2 col-md-2">
-  <button class="btn btn-default">X</button>
-</div>
-<div class="col-lg-12 col-md-12">
+  <div class="row">
+    <div class="col-lg-10 col-md-10">
+      <select>
+        {% for hotel in hotels %}
+          <option value="{{hotel}}">{{hotel}}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="col-lg-2 col-md-2">
+      <button class="btn btn-default">X</button>
+    </div>
+  </div>
   <h3>Activity</h3>
-</div>
-<div class="col-lg-10 col-md-10">
-  <select>
-    {% for activity in activities %}
-      <option value="{{activity}}">{{activity}}</option>
-    {% endfor %}
-  </select>
-</div>
-<div class="col-lg-2 col-md-2">
-  <button class="btn btn-default">X</button>
-</div>
-<div class="col-lg-12 col-md-12">
+  <div class="row">
+    <div class="col-lg-10 col-md-10">
+      <select>
+        {% for activity in activities %}
+          <option value="{{activity}}">{{activity}}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="col-lg-2 col-md-2">
+      <button class="btn btn-default">X</button>
+    </div>
+  </div>
   <h3>Restaurant</h3>
-</div>
-<div class="col-lg-10 col-md-10">
-  <select>
-    {% for restaurant in restaurants %}
-      <option value="{{restaurant}}">{{restaurant}}</option>
-    {% endfor %}
-  </select>
-</div>
-<div class="col-lg-2 col-md-2">
-  <button class="btn btn-default">X</button>
+  <div class="row">
+    <div class="col-lg-10 col-md-10">
+      <select>
+        {% for restaurant in restaurants %}
+          <option value="{{restaurant}}">{{restaurant}}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="col-lg-2 col-md-2">
+      <button class="btn btn-default">X</button>
+    </div>
+  </div>
 </div>
 {% endblock %}
 
