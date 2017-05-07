@@ -1,3 +1,5 @@
+{% extends "layout.html" %}
+{% block fields %}
 <select>
   {% for hotel in hotels %}
     <option value="{{hotel}}">{{hotel}}</option>
@@ -13,3 +15,4 @@
     <option value="{{restaurant}}">{{restaurant}}</option>
   {% endfor %}
 </select>
+{% endblock %}
