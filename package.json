@@ -4,7 +4,10 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "nodemon app.js"
+    "test": "nodemon app.js",
+    "start:dev": "nodemon -e html,css,js app.js",
+    "build:css": "node-sass -w -r assets/stylesheets -o public/stylesheets",
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +23,7 @@
     "sequelize": "^3.30.4"
   },
   "devDependencies": {
+    "node-sass": "^4.5.2",
     "nodemon": "^1.11.0"
   }
 }
